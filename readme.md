@@ -13,4 +13,6 @@ If you have multiple people using the same web app, this is a great way to show 
 
 Navigate cmd/terminal to `/server` and use `npm install && npm start` to start the server.
 
+The client must be hosted on a server. Run it locally via `http-server`. _(Install it with cmd `npm install -g http-server`)_
+
 Do you want to run the server as a service on Windows? Run `windows-install-service.bat`.
