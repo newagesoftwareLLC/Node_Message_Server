@@ -1,0 +1,17 @@
+<html>
+  <header>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="msg.js"></script>
+  </header>
+
+  <body style="font-family: Arial, Helvetica, sans-serif;">
+    <h1>Message Web App Sample Code</h1>
+    <h3>SEND (WS:send)</h3>
+    <input id="title" placeholder="title"><br>
+    <input id="message" placeholder="message"><br>
+    <button onclick="SendMsg()">SEND MSG</button>
+
+    <h3>RECEIVE (WS:onmessage)</h3>
+    <div id="receiving"></div>
+  </body>
+</html>
