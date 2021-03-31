@@ -1,11 +1,21 @@
 const http = require('http');
 const WebSocket = require('ws');
 const url = require('url');
+const fs = require("fs");
 
 // uncomment wss2 to add more apps
 const server = http.createServer();
 const wss1 = new WebSocket.Server({ noServer: true });
 //const wss2 = new WebSocket.Server({ noServer: true });
+
+// If you want to use WSS (SSL) uncomment this
+// generate your cert and private keys with OpenSSL
+// or, if using Windows Server, export your cert and private key
+/*const server = https.createServer({
+	cert: fs.readFileSync("test.crt"),
+	key: fs.readFileSync("private.key"),
+	rejectUnauthorized: false
+})*/
 
 wss1.on('connection', function connection(ws) {
     ws.on('message', function incoming(data) {
